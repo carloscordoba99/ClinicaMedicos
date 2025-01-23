@@ -1,0 +1,105 @@
+use BDClinicaGrupo19
+go
+
+CREATE PROCEDURE [dbo].[spAgregarPaciente]
+(
+    @DNI_P INT,
+    @NOMBRE_P VARCHAR(30),
+    @APELLIDO_P VARCHAR(30),
+    @SEXO_P CHAR(1),
+    @NACIONALIDAD_P VARCHAR(40),
+    @FECHANAC_P DATE,
+    @DIRECCION_P VARCHAR(40),
+    @LOCALIDAD_P VARCHAR(30),
+    @PROVINCIA_P VARCHAR(30),
+    @EMAIL_P VARCHAR(30),
+    @TELEFONO_P VARCHAR(30),
+    @ESTADO_P BIT
+)
+AS
+INSERT INTO Pacientes(
+        DniPaciente_P, 
+        Nombre_P, 
+        Apellido_P, 
+        Sexo_P, 
+        Nacionalidad_P, 
+        FechaNacimiento_P, 
+        Direccion_P, 
+        IdLocalidad_Paciente, 
+        IdProvincia_Paciente, 
+        Email_P, 
+        Telefono_P, 
+        Estado_P)
+		Values(@DNI_P, 
+        @NOMBRE_P, 
+        @APELLIDO_P, 
+        @SEXO_P, 
+        @NACIONALIDAD_P, 
+        @FECHANAC_P, 
+        @DIRECCION_P, 
+        @LOCALIDAD_P, 
+        @PROVINCIA_P, 
+        @EMAIL_P, 
+        @TELEFONO_P, 
+        @ESTADO_P)
+	RETURN
+
+ALTER PROCEDURE [dbo].[spAgregarMedico]
+(
+    @LEGAJO_M INT,
+    @ID_PROVINCIA_M VARCHAR(30),
+    @ID_LOCALIDAD_M VARCHAR(30),
+    @ID_ESPECIALIDAD_M INT,
+    @ID_HORARIO_M INT,
+    @ID_DIA_M CHAR(1),
+    @USUARIO_M VARCHAR(30),
+    @PASS_M VARCHAR(30),
+    @DNI_M VARCHAR(8),
+    @NOMBRE_M VARCHAR(30),
+    @APELLIDO_M VARCHAR(30),
+    @NACIONALIDAD_M VARCHAR(40),
+	@SEXO_M CHAR(1),
+    @DIRECCION_M VARCHAR(40),
+    @EMAIL_M VARCHAR(40),
+    @TELEFONO_M VARCHAR(30),
+    @FECHA_NACIMIENTO_M DATE,
+    @ESTADO_P BIT
+)
+AS
+INSERT INTO Medicos(Legajo_M, 
+        IdProvincia_M, 
+        IdLocalidad_M, 
+        IdEspecialidad_M, 
+        IdHorario_M, 
+        IdDia_M, 
+        NombreUsuario_M, 
+        PassUsuario_M, 
+        Dni_M, 
+        Nombre_M, 
+        Apellido_M, 
+        Nacionalidad_M,
+		Sexo_M,
+        Direccion_M, 
+        Email_M, 
+        Telefono_M, 
+        FechaNacimiento_M,
+        Estado_P)
+		Values(  @LEGAJO_M, 
+        @ID_PROVINCIA_M, 
+        @ID_LOCALIDAD_M, 
+        @ID_ESPECIALIDAD_M, 
+        @ID_HORARIO_M, 
+        @ID_DIA_M, 
+        @USUARIO_M, 
+        @PASS_M, 
+        @DNI_M, 
+        @NOMBRE_M, 
+        @APELLIDO_M, 
+        @NACIONALIDAD_M,
+		@SEXO_M,
+        @DIRECCION_M, 
+        @EMAIL_M, 
+        @TELEFONO_M, 
+        @FECHA_NACIMIENTO_M, 
+        @ESTADO_P)
+	RETURN
