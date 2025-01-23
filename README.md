@@ -1,13 +1,36 @@
-este proyecto esta siendo desarrollado junto un grupo de 4 personas para el final de una materia.
-Se basa en un sistema para poder controlar turnos, pacientes y 
-médicos con facilidad. Realizamos la base de datos en Microsoft SQL Server, 
-y luego en programación en 3 capas en Visual Estudio usando .net y C# la parte funcional.
-El punto del sistema es ser un CRM para atencion y tambien manejo de la clinica, podras buscar pacientes, agregar turnos y demas cosas.
-Cuenta con un Login y un usuario admin que tendra capicidades extraordinarias como agregar o dar baja logica de medicos.
-La mayoria del tp esta trabajo en un foro grupal de la UTN, pero seguiremos trabajando en GIT desde ahora. 
------------------------------------------------------------------------------------------
-This proyect have been made for 4 persons, it is a proyect to a university subject.
-We work with Micosoft SQL Server and Visual Studio | C# | ASP.NET.
-The point of the system is a CRM make it whith MVC, to control, turns,medics and patients.
-Also a Admin fuction to add medics turns, with a login system.
-The most part of the TP was made in a Grupal Forum of the University, but we'll continue working here. :)
+###Clínica Médicos
+Clínica Médicos es una aplicación web desarrollada utilizando C# y ASP.NET, diseñada para gestionar los turnos, 
+clientes y médicos de una clínica. La aplicación sigue la arquitectura MVC (Modelo-Vista-Controlador) y ofrece funcionalidades tanto para clientes como para administradores.
+
+####Funcionalidades Principales 📋
+#####Gestión de Clientes:
+
+Registro y actualización de información personal.
+
+Solicitud y cancelación de turnos médicos.
+
+Visualización del historial de turnos.
+
+#####Gestión de Médicos:
+
+Registro y actualización de perfiles médicos.
+
+Asignación de turnos.
+
+Seguimiento de agendas y disponibilidad.
+
+#####Gestión de Turnos:
+
+Creación, actualización y eliminación de turnos.
+
+Confirmación y recordatorio de turnos.
+
+Visualización de turnos disponibles.
+
+#####Panel de Administrador:
+
+Administración de clientes y médicos.
+
+Gestión integral de turnos.
+
+Generación de reportes y estadísticas
